@@ -5,10 +5,6 @@ permissions:
 
 
 on:
-  push:
-    branches: [ main, newBranch ]
-    tags:
-      - "*"
   pull_request:
     branches: [ main ]
 
