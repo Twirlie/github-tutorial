@@ -1,3 +1,3 @@
-const message: string = 'hello!'
+const message: string = 'hello world!'
 
 console.log(message)
