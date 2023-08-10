@@ -27,3 +27,4 @@ jobs:
         run: npm run build --if-present
       - name: run the hello world
         run: npm start
+      run: echo "build successful"
