@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main, newBranch ]
     tags:
-      - "v*.*.*"
+      - "*"
   pull_request:
     branches: [ main ]
 
@@ -32,5 +32,4 @@ jobs:
       - name: GH Release
         uses: softprops/action-gh-release@v0.1.15
         with:
-          tag_name: "tryit"
           files: dist/main.js
