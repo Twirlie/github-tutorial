@@ -1,5 +1,9 @@
 name: Node.js install
 
+permissions:
+  contents: write
+
+
 on:
   push:
     branches: [ main, newBranch ]
@@ -9,12 +13,14 @@ on:
     branches: [ main ]
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
     
     strategy:
       matrix:
         node-version: [20.x]
+        
 
     steps:
       - name: Checkout
@@ -32,4 +38,6 @@ jobs:
       - name: GH Release
         uses: softprops/action-gh-release@v0.1.15
         with:
+          tag_name: "tryit4"
           files: dist/main.js
+
