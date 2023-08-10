@@ -3,7 +3,6 @@ name: Node.js install
 permissions:
   contents: write
 
-
 on:
   push:
     branches: [ main ]
