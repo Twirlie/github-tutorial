@@ -1,0 +1,27 @@
+{
+  "name": "github-tutorial",
+  "version": "1.0.0",
+  "description": "github stuff",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/main.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Twirlie/github-tutorial.git"
+  },
+  "keywords": [
+    "github"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Twirlie/github-tutorial/issues"
+  },
+  "homepage": "https://github.com/Twirlie/github-tutorial#readme",
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
+}
